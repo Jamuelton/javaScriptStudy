@@ -1,0 +1,46 @@
+body {
+    background-color: #2f3542;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: #ff4757
+}
+
+footer {
+    color: white;
+}
+
+section {
+    background-color: #dfe4ea;
+    margin: 0px 100px 0px 100px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #ff4757;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+}
+
+#but {
+    border: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    width: 120px;
+    height: 40px;
+    border-radius: 520px;
+}
+
+#but:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.226);
+    background-color: #ff4757;
+    color: white;
+}
+
+#foto {
+    padding: 20px;
+}
+
+.campo {
+    padding: 20px;
+}

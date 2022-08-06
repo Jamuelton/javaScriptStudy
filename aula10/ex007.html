@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <div id="fundo">
+        <div id="corpo">
+            <p id="res"></p>
+            <tr>
+                <td><button class=n2 onclick="clean()">C</button></td>
+                <td><button class=n2 onclick="back()">~</button></td>
+                <td><button class=n2 onclick=>%</button></td>
+                <td><button class=n1 onclick="insert('/')">/</button></td>
+            </tr><br>
+            <tr>
+                <td><button class="botao" onclick="insert('7')">7</button></td>
+                <td><button class="botao" onclick="insert('8')">8</button></td>
+                <td><button class="botao" onclick="insert('9')">9</button></td>
+                <td><button class=n1 onclick="insert('X')">X</button></td>
+            </tr><br>
+            <tr>
+                <td><button class="botao" onclick="insert('4')">4</button></td>
+                <td><button class="botao" onclick="insert('5')">5</button></td>
+                <td><button class="botao" onclick="insert('6')">6</button></td>
+                <td><button class=n1 onclick="insert('-')">-</button></td>
+            </tr><br>
+            <tr>
+                <td><button class="botao" onclick="insert('1')">1</button></td>
+                <td><button class="botao" onclick="insert('2')">2</button></td>
+                <td><button class="botao" onclick="insert('3')">3</button></td>
+                <td><button class=n1 onclick="insert('+')">+</button></td>
+            </tr><br>
+            <tr>
+                <td colspan="2"><button class="n3" onclick="insert('0')">0</button></td>
+                <td><button class="botao" onclick="insert('.')">.</button></td>
+                <td><button class=n1 onclick="calcula()">=</button></td>
+            </tr>
+        </div>
+        <!--corpo-->
+    </div>
+    <!--fundo-->
+    <script>
+        function insert(num) {
+            var numero = window.document.getElementById('res').innerText;
+            window.document.getElementById('res').innerText = numero + num;
+
+        }
+
+        function clean() {
+            var limpar = window.document.getElementById('res').innerText = "";
+        }
+
+        function back() {
+            var limpar = window.document.getElementById('res').innerHTML;
+            window.document.getElementById('res').innerHTML = limpar.substring(0, limpar.length - 1);
+        }
+
+        function calcula() {
+            var calcular = window.document.getElementById('res').innerText;
+            if (calcular) {
+                window.document.getElementById('res').innerText = eval(calcular);
+            }
+        }
+    </script>
+</body>
+
+</html>

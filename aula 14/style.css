@@ -1,0 +1,21 @@
+body {
+    background-color: #D980FA;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+footer {
+    color: white;
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    margin: 0px 150px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.295);
+    border-radius: 15px;
+}

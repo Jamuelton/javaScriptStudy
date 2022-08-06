@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+.final {
+    color: white;
+}
+
+#area {
+    background-color: white;
+    padding: 20px;
+    margin: 0px 140px 0px 140px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
+}

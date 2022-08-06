@@ -1,0 +1,32 @@
+body {
+    background-color: #7ed6df;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    text-align: left;
+    margin: 0px 100px 0px 100px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.308);
+}
+
+.a1 {
+    padding: 10px;
+}
+
+.a2 {
+    padding: 10px;
+}
+
+.a3 {
+    padding: 10px;
+}
+
+#para {
+    padding: 10px;
+}
